@@ -17,6 +17,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 			<set-payload value="#[payload * 10]" doc:name="Set Payload" doc:id="1ded5163-dacd-4b42-b786-a1b81c36b334" />
 			<logger level="INFO" doc:name="Logger" doc:id="61e4a378-4d71-4340-ba18-68ef20aab20b" message="#[payload]"/>
 			<set-variable value="#[payload]" doc:name="Set Variable" doc:id="1e0c9fd7-128e-4fc8-a2dc-b876f71d1a42" variableName="mypayload"/>
+			<logger level="INFO" doc:name="Logger" doc:id="5e1921ec-2ebb-40e5-bf22-3d69b1b2fe23" message="dummy loger"/>
 		</foreach>
 		<ee:transform doc:name="Transform Message" doc:id="99b0b1cd-8c1e-4b38-908c-15cdd1651788">
 			<ee:message>
